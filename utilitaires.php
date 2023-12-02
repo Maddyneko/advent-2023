@@ -9,3 +9,8 @@ function debug(?array $valeur): void
 	print_r($valeur);
 	echo "</pre>";
 }
+
+function transformationChaineCaractere(array $valeursARemplacer, array $valeurRemplacement, string $valeurs): string
+{
+	return str_replace($valeursARemplacer, $valeurRemplacement, $valeurs);
+}
