@@ -2,10 +2,5 @@
 require_once('../utilitaires.php');
 require_once('../handlers/jour1Handler.php');
 
-$total = 0;
-$valeurEntree = getValeurEntree();
-$valeureEntreeNombre = getNettoyageCaracteresAlphabetiques($valeurEntree);
-$datas = explode('-', $valeureEntreeNombre);
-
-$total = calculTotalFromDatas($datas);
+$total = getTotalFromInput(1);
 echo $total;//56465

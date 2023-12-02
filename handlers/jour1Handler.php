@@ -37,3 +37,15 @@ function calculTotalFromDatas(array $datas): int
 
 	return $total;
 }
+
+function getTotalFromInput(int $numeroPuzzle): int
+{
+	$valeurEntree = getValeurEntree();
+	if ($numeroPuzzle > 1) {
+		$valeurEntree = getTransformerNombresAlphabetiquesEnNombresNumeriques($valeurEntree);
+	}
+	$valeureEntreeNombre = getNettoyageCaracteresAlphabetiques($valeurEntree);
+	$datas = explode('-', $valeureEntreeNombre);
+
+	return calculTotalFromDatas($datas);
+}
