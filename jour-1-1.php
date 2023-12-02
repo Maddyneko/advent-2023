@@ -4,7 +4,6 @@ $valeureEntree = 'jjfvnnlfivejj1-6fourfour-ninevbmltwo69-pcg91vqrfpxxzzzoneightz
 ;
 $lettres = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
 $remplacement = array("");
-
 $valeureEntreeNombre = str_replace($lettres, $remplacement, $valeureEntree);
 $datas = explode('-', $valeureEntreeNombre);
 
@@ -14,4 +13,4 @@ foreach ($datas as $data) {
 	$nombre =  $datasDetail[0] . $datasDetail[count($datasDetail) - 1];
 	$total  += $nombre;
 }
-echo $total;
+echo $total;//56465
