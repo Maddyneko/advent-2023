@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} GET
+RewriteRule ^jour/([0-9]+)/puzzle/([0-9]+)$ endpoints/jour-$1-$2.php
